@@ -20,8 +20,8 @@ Create your app on:
 https://account.live.com/developers/applications/
 
 When you create your app, get note of:
-- ID client
-- Client private key
+- ID client (client_id)
+- Client private key (client_secret)
 
 #How to generate the refresh token
 
