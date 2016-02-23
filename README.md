@@ -1,10 +1,13 @@
 # onedrive-nodejs
 
 #What is onedrive-nodejs
+
 Onedrive-nodejs is an open source library to connect your node js application to Microsoft one drive.
 
 Microsoft Onedrive official documentation:
-access token   -> http://msdn.microsoft.com/en-us/library/hh243649.aspx#authorization_rest
+
+access token -> http://msdn.microsoft.com/en-us/library/hh243649.aspx#authorization_rest
+
 api -> http://msdn.microsoft.com/en-us/library/hh826531.aspx#reading_folders
 
 #How to configure the library
@@ -19,6 +22,7 @@ Remember to replace all the parameters on top of onedrive.js
 ##How to generate all the parametes:
 
 **1.Create your app on:**
+
 https://account.live.com/developers/applications/
 
 When you create your app, get note of:
