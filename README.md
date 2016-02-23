@@ -18,7 +18,7 @@ Remember to replace all the parameters on top of onedrive.js
 
 ##How to generate all the parametes:
 
-1.Create your app on:
+**1.Create your app on:**
 https://account.live.com/developers/applications/
 
 When you create your app, get note of:
@@ -26,7 +26,7 @@ When you create your app, get note of:
 - Client private key (**client_secret**)
 - Web app url (**redirect_uri**)
 
-2.Get outh code.
+**2.Get outh code:**
 
 Remember to replace the ID_CLIENT and WEB_APP_URL_ESCAPED with the parameter of your app:
 
@@ -41,7 +41,7 @@ code=nnnnn-nnnn-nnnn-nnn-nnnnnnnnnn
 
 get note of the given code.
 
-3.Get access token 
+**3.Get access token:**
 
 Remember to replace the ID_CLIENT, WEB_APP_URL, CLIENT_PRIVATE_KEY and the code (GENERRATED_CODE) generate to the steps before.
 
