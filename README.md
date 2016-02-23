@@ -9,23 +9,23 @@ api -> http://msdn.microsoft.com/en-us/library/hh826531.aspx#reading_folders
 
 #How to configure the library
 
-Remember to substitute all the info on top of onedrive.js 
+Remember to replace all the info on top of onedrive.js 
 
 - client_id
 - redirect_uri
 - client_secret
 - refresh_token
 
-Create your app on:
+##How to generate all the parametes:
+
+1.Create your app on:
 https://account.live.com/developers/applications/
 
 When you create your app, get note of:
 - ID client (client_id)
 - Client private key (client_secret)
 
-#How to generate the refresh token
-
-1.Get outh code.
+2.Get outh code.
 
 Remember to substitute the ID_CLIENT and YOUR_APP_WEB_SITE_URL_ESCAPED with the parameter of your app:
 
@@ -40,9 +40,9 @@ code=nnnnn-nnnn-nnnn-nnn-nnnnnnnnnn
 
 get note of the given code.
 
-2.Get access token 
+3.Get access token 
 
-Remember to substitute the ID_CLIENT, YOUR_APP_WEB_SITE_URL, CLIENT_PRIVATE_KEY and the code (GENERRATED_CODE) generate to the step before.
+Remember to replace the ID_CLIENT, YOUR_APP_WEB_SITE_URL, CLIENT_PRIVATE_KEY and the code (GENERRATED_CODE) generate to the steps before.
 
 ```
 POST: https://login.live.com/oauth20_token.srf
