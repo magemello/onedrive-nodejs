@@ -9,7 +9,7 @@ api -> http://msdn.microsoft.com/en-us/library/hh826531.aspx#reading_folders
 
 #How to configure the library
 
-Remember to replace all the info on top of onedrive.js 
+Remember to replace all the parameters on top of onedrive.js 
 
 - client_id
 - redirect_uri
