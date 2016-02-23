@@ -28,7 +28,7 @@ When you create your app, get note of:
 
 2.Get outh code.
 
-Remember to substitute the ID_CLIENT and WEB_APP_URL_ESCAPED with the parameter of your app:
+Remember to replace the ID_CLIENT and WEB_APP_URL_ESCAPED with the parameter of your app:
 
 ```
 GET: https://login.live.com/oauth20_authorize.srf?client_id=ID_CLIENT&scope=wl.offline_access%20wl.skydrive_update%20wl.signin%20wl.basic&response_type=code&redirect_uri=WEB_APP_URL_ESCAPED
