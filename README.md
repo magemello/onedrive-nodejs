@@ -38,7 +38,7 @@ Response:
 code=nnnnn-nnnn-nnnn-nnn-nnnnnnnnnn
 ```
 
-get note of the given code:
+get note of the given code.
 
 2.Get access token 
 
