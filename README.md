@@ -33,11 +33,12 @@ Remember to substitute the ID_CLIENT and YOUR_APP_WEB_SITE_URL_ESCAPED with the 
 GET: https://login.live.com/oauth20_authorize.srf?client_id=ID_CLIENT&scope=wl.offline_access%20wl.skydrive_update%20wl.signin%20wl.basic&response_type=code&redirect_uri=YOUR_APP_WEB_SITE_URL_ESCAPED
 ```
 
-get note of the given code:
-
+Response:
 ```
 code=nnnnn-nnnn-nnnn-nnn-nnnnnnnnnn
 ```
+
+get note of the given code:
 
 2.Get access token 
 
