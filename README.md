@@ -22,15 +22,16 @@ Remember to replace all the parameters on top of onedrive.js
 https://account.live.com/developers/applications/
 
 When you create your app, get note of:
-- ID client (client_id)
-- Client private key (client_secret)
+- ID client (**client_id**)
+- Client private key (**client_secret**)
+- Web app url (**redirect_uri**)
 
 2.Get outh code.
 
-Remember to substitute the ID_CLIENT and YOUR_APP_WEB_SITE_URL_ESCAPED with the parameter of your app:
+Remember to substitute the ID_CLIENT and WEB_APP_URL_ESCAPED with the parameter of your app:
 
 ```
-GET: https://login.live.com/oauth20_authorize.srf?client_id=ID_CLIENT&scope=wl.offline_access%20wl.skydrive_update%20wl.signin%20wl.basic&response_type=code&redirect_uri=YOUR_APP_WEB_SITE_URL_ESCAPED
+GET: https://login.live.com/oauth20_authorize.srf?client_id=ID_CLIENT&scope=wl.offline_access%20wl.skydrive_update%20wl.signin%20wl.basic&response_type=code&redirect_uri=WEB_APP_URL_ESCAPED
 ```
 
 Response:
@@ -42,17 +43,17 @@ get note of the given code.
 
 3.Get access token 
 
-Remember to replace the ID_CLIENT, YOUR_APP_WEB_SITE_URL, CLIENT_PRIVATE_KEY and the code (GENERRATED_CODE) generate to the steps before.
+Remember to replace the ID_CLIENT, WEB_APP_URL, CLIENT_PRIVATE_KEY and the code (GENERRATED_CODE) generate to the steps before.
 
 ```
 POST: https://login.live.com/oauth20_token.srf
 
 Content-Type: application/x-www-form-urlencoded 
 
-Payload: client_id=ID_CLIENT&redirect_uri=YOUR_APP_WEB_SITE_URL/&client_secret=CLIENT_PRIVATE_KEY&code=GENERRATED_CODE&grant_type=authorization_code
+Payload: client_id=ID_CLIENT&redirect_uri=WEB_APP_URL/&client_secret=CLIENT_PRIVATE_KEY&code=GENERRATED_CODE&grant_type=authorization_code
 ```
 
-Response, Get note of the refresh_token and add it to the relative field in library: 
+Response: 
 
 ```
 token_type: "bearer"
@@ -64,3 +65,5 @@ authentication_token: "NNNNNNNN"
 user_id: "NNNNNNNN"
 }
 ```
+
+Get note of the **refresh_token** and add it to the relative field in library.
