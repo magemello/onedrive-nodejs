@@ -70,4 +70,4 @@ user_id: "NNNNNNNN"
 }
 ```
 
-Get note of the **refresh_token** and add it to the relative field in library.
+Get note of the **refresh_token** and add it to the relative field in the library.
