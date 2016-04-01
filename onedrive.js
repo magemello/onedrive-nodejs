@@ -9,13 +9,12 @@ var onedrive = {};
 
 onedrive.getToken = function(callback) {
     console.log('[Onedrive getToken] start');
-    var dataToSend = {
-        'client_id': 'changeme_with_your_client_id',
-        'redirect_uri': 'changeme_with_your_redirect_uri',
-        'client_secret': 'changeme_with_a_valid_client_secret',
-        'refresh_token': 'changeme_with_a_valid_token',
-        'grant_type': 'refresh_token'
-    };
+    var dataToSend =
+        'client_id=changeme_with_your_client_id' +
+        '&redirect_uri=changeme_with_your_redirect_uri' +
+        '&client_secret=changeme_with_a_valid_client_secret' +
+        '&refresh_token=changeme_with_a_valid_refresh_token' +
+        '&grant_type=refresh_token';
 
     restler.post('https://login.live.com/oauth20_token.srf', {
         data: dataToSend
